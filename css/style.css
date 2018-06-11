@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+body {
+  background-color: white;
+  font-family: 'Times New Roman';
+  font-size: 26px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+/*** Table Styles **/
+
+.table-fill {
+  background: rgb(235, 232, 232);
+  color: black;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 100%; 
+  margin: 0 0 0 0;
+  width: 100%;
+  min-width: 200px;
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+}
+ 
+th { 
+  width: 20%;
+  height: 20%;
+  padding: 5px 0px 5px 0;
+  font-size:80px;
+  font-weight: 100;
+  text-align:left;
+  vertical-align:middle;
+  white-space:nowrap;
+  border-right: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-right: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  columns: #000000;;
+}
+ 
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+
+ 
+ 
+td {
+  width: 20%;
+  height: 20%;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:100px;
+  font-size:100px;
+  border-right: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  white-space:pre-wrap; 
+  word-wrap:break-word;
+}
+td.page1{
+  padding: 25px 0px 25px 0;
+}
+td.page3
+{
+  font-weight:80;
+  font-size:80px;
+  padding: 0 0 0 0;
+}
+#trouble-time
+{
+  font-size:55px;
+  font-weight:90;
+}
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  font-size:80px;
+  text-align: center;
+}
+td.num-center
+{
+  font-weight:80;
+  font-size:120px;
+}
+td.num-center-page3
+{
+  font-weight:80;
+  font-size:105px;
+}
+#timer{
+  font-weight:110;
+  font-size:80px;
+}
+td.timer-page3{
+
+}
+td.text-right {
+  text-align: right;
+}
+td.text-running {
+  font-size:80px;
+  background: rgb(8, 240, 8)!important;
+}
+td.text-running-page3 {
+  font-size:60px;
+  background: rgb(8, 240, 8)!important;
+}
+td.text-stop {
+  font-size:80px;
+  background: red!important;
+  animation: my 1000ms infinite;
+}
+td.text-stop-khong-nhay{
+  font-size:80px;
+  background: yellow!important;
+  color: #000000;
+}
+#run{
+  padding: 0 0 0 0;
+}
+@keyframes my { 
+  0% { 
+    color: red;
+    background: #FFFFFF; 
+   }
+   50% { 
+    color: whitesmoke;
+    background: tomato; 
+   }
+  100% { 
+    color: #FFFFFF;
+    background: red; 
+    } 
+} 
+.nhap-lieu{
+  font-size: 10px;
+  display:inline-block;
+  border:none;
+  background: #FFFFFF;
+  color: #FFFFFF;
+}
+.nhap-lieu:hover{
+  padding: 0px;
+  background: #4E5066;
+  color: #000000;
+}
+/*** Table Styles-Page 5 **/
+.tbl-sanluong{
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 100%; 
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 30px;
+  /* background: rgb(43, 74, 78);
+  color: rgb(226, 213, 213); */
+  background: rgb(235, 232, 232);
+  color: black;
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+}
+.tbl-sanluong tr:nth-child(odd) td {
+  background:rgb(167, 196, 199);
+}
+.tbl-sanluong th{
+  border-right: 1px solid #343a45;
+  font-size:24px;
+  font-weight: 100;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  text-align:  center
+}
+
+.tbl-sanluong td{
+  font-size:24px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  text-align: center
+}
+
+.tbl-sanluong tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  font-size:24px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  text-align: center
+}
+
+.t1 td{
+  background-color:rgb(8, 245, 8)!important;
+  color: black;
+  height: 50px !important;
+  font-size: 60px;
+}
+
+.t2 td{
+  background-color:orange!important;
+  color: black;
+  height: 50px !important;
+  font-size: 55px;
+  font-weight: 80!important;
+  width: 10%;
+}
+
+
+.tbl-sanluong .line {
+  font-size: 80px !important; 
+  font-weight: 500;
+  height: 30px;
+  padding:  0 0 0 0;
+  border-right: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+}
+
+#r1_c1, #r2_c1, #r3_c1,#r4_c1,#r5_c1,#r6_c1{
+  font-size: 80px !important;
+  font-weight: 400 !important;
+  color:rgb(3, 3, 105);
+}
+
+#r1 td, #r2 td,#r3 td, #r4 td, #r5 td, #r6 td{
+  font-size: 95px;
+  width: 10%;
+}
+
+#page {
+  width: 11% !important;
+  font-size: 80px;
+  border-right: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  font-weight: 400;
+}
+
